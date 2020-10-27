@@ -20,7 +20,8 @@ import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
-import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+// import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -49,7 +50,8 @@ ClassicEditor.builtinPlugins = [
 	ImageCaption,
 	ImageStyle,
 	ImageToolbar,
-	ImageUpload,
+	// ImageUpload,
+	ImageInsert,
 	Indent,
 	Link,
 	List,
@@ -77,6 +79,7 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'|',
 			'imageUpload',
+			'imageInsert',
 			'blockQuote',
 			'code-block',
 			'insertTable',
@@ -90,7 +93,8 @@ ClassicEditor.defaultConfig = {
 			// 'imageStyle:full',
 			// 'imageStyle:side',
 			// '|',
-			'imageTextAlternative'
+			'imageTextAlternative',
+			'imageInsert'
 		]
 	},
 	// table: {
