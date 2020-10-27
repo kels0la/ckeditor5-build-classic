@@ -7,7 +7,7 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+// import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
@@ -39,7 +39,7 @@ ClassicEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
 	Autoformat,
-	CodeBlock,
+	// CodeBlock,
 	Bold,
 	Italic,
 	BlockQuote,
@@ -81,21 +81,21 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'imageInsert',
 			'blockQuote',
-			'codeBlock',
-			'insertTable',
+			// 'codeBlock',
+			// 'insertTable',
 			'mediaEmbed',
 			'undo',
 			'redo'
 		]
 	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
+	// image: {
+	// 	toolbar: [
+	// 		'imageStyle:full',
+	// 		'imageStyle:side',
+	// 		'|',
+	// 		'imageTextAlternative'
+	// 	]
+	// },
 	// table: {
 	// 	contentToolbar: [
 	// 		'tableColumn',
