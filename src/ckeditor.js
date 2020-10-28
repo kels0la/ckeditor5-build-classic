@@ -79,8 +79,8 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'|',
 			'imageUpload',
-			'blockQuote',
 			'imageInsert',
+			'blockQuote',
 			'code-block',
 			'insertTable',
 			'mediaEmbed',
@@ -94,15 +94,13 @@ ClassicEditor.defaultConfig = {
 			// 'imageStyle:side',
 			// '|',
 			'imageTextAlternative'
-		]
+		],
+		upload: {
+			panel: {
+				items: [ 'insertImageViaUrl' ]
+			}
+		}
 	},
-	// table: {
-	// 	contentToolbar: [
-	// 		'tableColumn',
-	// 		'tableRow',
-	// 		'mergeTableCells'
-	// 	]
-	// },
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
