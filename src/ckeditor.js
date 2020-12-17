@@ -33,6 +33,8 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
+import './custom.css';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -103,6 +105,9 @@ ClassicEditor.defaultConfig = {
 				items: [ 'insertImageViaUrl' ]
 			}
 		}
+	},
+	mediaEmbed: {
+		removeProviders: [ 'instagram', 'twitter', 'googleMaps', 'flickr', 'facebook', 'vimeo', 'spotify', 'dailymotion' ]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
